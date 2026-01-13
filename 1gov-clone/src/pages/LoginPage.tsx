@@ -15,15 +15,15 @@ const LoginPage = () => {
                     <p className="hidden lg:block absolute top-6 left-6 text-white">Resources ⌵ Help</p>
                 </div>
 
-                <div className='lg:order-1'>
+                <div className='lg:order-1 text-center'>
                     <div className="">
-                        <img src={OneGovLogo} alt='1Gov Logo' />
+                        <img src={OneGovLogo} alt='1Gov Logo' className='h-12 ml-56 mt-16 mb-30' />
                     </div>
 
                     <div>
                         <div>
-                            <p>Welcome Back!</p>
-                            <p>Enter your credentials to access the MDA</p>
+                            <p className='font-bold text-[#212529] text-[28px]'>Welcome Back!</p>
+                            <p className='text-[16px] text-[#667185] font-bold w-56 text-left relative left-[16.2rem]'>Enter your credentials to access the MDA</p>
                             <form className='flex flex-col'>
                                 <label>MDA</label>
                                 <input type='text' placeholder='Enter your MDA' />

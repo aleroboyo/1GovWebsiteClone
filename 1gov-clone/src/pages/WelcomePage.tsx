@@ -22,9 +22,9 @@ const WelcomePage = () => {
 
             <div className='min-w-full'>
 
-                <header className='position: fixed bg-white pt-10 pb-4 p-14 w-full'>
+                <header className='fixed bg-white pt-10 pb-4 p-14 w-full'>
                     <nav className="flex justify-between">
-                        <div >
+                        <div>
                             <img src={OneGovLogo} alt='1Gov Logo' className='h-12'/>
                         </div>
                         <div className='lg:hidden'>
@@ -95,7 +95,7 @@ const WelcomePage = () => {
                                     <div className='mb-4'>{product.description}</div>
                                     <div>
                                         <Link to={product.link} className='text-[#2D8645] font-semibold'>
-                                            Learn more<img src={SearchIcon} alt="Search Icon" className='position: relative bottom-10 left-22'/>
+                                            Learn more<img src={SearchIcon} alt="Search Icon" className='relative bottom-10 left-22'/>
                                         </Link>
                                     </div>
                                 </div>
