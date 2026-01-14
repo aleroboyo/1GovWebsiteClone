@@ -33,7 +33,7 @@ const LoginPage = () => {
                                 <PasswordVisibilty placeholder='Enter password'/>
                             </form>
                             <p className='text-[16px] text-[#BC1824] mb-4'>Forgot Password?</p>
-                            <button className='w-54 h-10 bg-[#033E03] text-white ml-1 rounded-md mb-12'>Login</button>
+                            <button className='w-54 h-10 bg-[#033E03] text-white ml-2 rounded-md mb-12'>Login</button>
                         </div>
                     </div>
 
