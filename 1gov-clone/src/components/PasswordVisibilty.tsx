@@ -9,8 +9,8 @@ const PasswordVisibilty = ({placeholder}: {placeholder: string}) => {
         <>
             <div>
                 <input type={showPassword ? 'text' : 'password'}
-                placeholder={placeholder}/>
-                <button type='button' onClick={() => setShowPassword(!showPassword)}><img src={showPassword ? UnseeIcon : SeeIcon }/></button>
+                placeholder={placeholder} className='w-54 h-10 border border-[#bcbbbb] rounded-md pl-2 relative left-5 mb-4'/>
+                <button type='button' onClick={() => setShowPassword(!showPassword)} className='w-8 relative top-2 right-4'><img src={showPassword ? UnseeIcon : SeeIcon }/></button>
             </div>
         </>
     )

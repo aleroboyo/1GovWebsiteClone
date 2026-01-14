@@ -23,25 +23,25 @@ const LoginPage = () => {
                     <div>
                         <div>
                             <p className='font-bold text-[#212529] text-[28px]'>Welcome Back!</p>
-                            <p className='text-[16px] text-[#667185] font-bold w-56 text-left relative left-[16.2rem]'>Enter your credentials to access the MDA</p>
-                            <form className='flex flex-col'>
-                                <label>MDA</label>
-                                <input type='text' placeholder='Enter your MDA' />
-                                <label>Email Address</label>
-                                <input type='text' placeholder='Enter Email' />
-                                <label>Password</label>
+                            <p className='text-[16px] text-[#667185] font-bold w-56 text-left relative left-64 mb-6'>Enter your credentials to access the MDA</p>
+                            <form className='flex flex-col gap-2'>
+                                <label className='text-[14px] text-[#101928] font-bold w-52 relative left-64 text-left'>MDA</label>
+                                <input type='text' placeholder='Enter your MDA' className='w-54 h-10 border border-[#bcbbbb] rounded-md pl-2 relative left-64'/>
+                                <label className='text-[14px] text-[#101928] font-bold w-52 relative left-64 text-left'>Email Address</label>
+                                <input type='text' placeholder='Enter Email' className='w-54 h-10 border border-[#bcbbbb] rounded-md pl-2 relative left-64' />
+                                <label className='text-[14px] text-[#101928] font-bold w-52 relative left-64 text-left'>Password</label>
                                 <PasswordVisibilty placeholder='Enter password'/>
                             </form>
-                            <p>Forgot Password?</p>
-                            <button>Login</button>
+                            <p className='text-[16px] text-[#BC1824] mb-4'>Forgot Password?</p>
+                            <button className='w-54 h-10 bg-[#033E03] text-white ml-1 rounded-md mb-12'>Login</button>
                         </div>
                     </div>
 
                     <div>
-                        <ul>
-                            <Link to=''><li>Privacy Policy•</li></Link>
-                            <Link to=''><li>Terms of Use•</li></Link>
-                            <Link to=''><li>Security</li></Link>
+                        <ul className='text-[14px] text-[#0D6EFD]  border border-red-500  w-54 ml-60 justify-center   text-center'>
+                            <Link to=''><li className='underline '>Privacy Policy<span className='text-[#212529bf] ml-4 '>•</span></li></Link>
+                            <Link to=''><li className='underline'>Terms of Use<span className='text-[#212529bf] ml-4'>•</span></li></Link>
+                            <Link to=''><li className='underline'>Security</li></Link>
                         </ul>
                     </div>
                 </div>
