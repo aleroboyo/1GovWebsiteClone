@@ -32,7 +32,7 @@ const LoginPage = () => {
                                 <label className='text-[14px] text-[#101928] font-bold w-52 lg:relative left-64 lg:text-left'>Password</label>
                                 <PasswordVisibilty placeholder='Enter password'/>
                             </form>
-                            <p className='text-[16px] text-[#BC1824] mb-4'>Forgot Password?</p>
+                            <Link to='/forgot-password'><p className='text-[16px] text-[#BC1824] mb-4'>Forgot Password?</p></Link>
                             <button className='w-54 h-10 bg-[#033E03] text-white ml-2 rounded-md mb-12'>Login</button>
                         </div>
                     </div>

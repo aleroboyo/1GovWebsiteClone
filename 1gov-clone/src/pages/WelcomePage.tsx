@@ -51,7 +51,7 @@ const WelcomePage = () => {
                                 </li>
                                 <li>Help</li>
                                 <li>
-                                    <button className='p-1 pl-2.5 pr-2.5 rounded-full text-white text-[13px] bg-[#FF3226]'>reportgov<span className='text-[9px]'> .ng</span></button>
+                                    <button className='p-1 pl-2.5 pr-2.5 rounded-full text-white text-[13px] bg-[#FF3226]'>reportgov <span className='text-[9px] bg-[#2D8B10] rounded-md pt-[0.2rem] pb-[0.2rem] pr-[0.2rem] pl-[0.2rem]'>.ng</span></button>
                                 </li>
                                 <li className='pt-1 pb-1 pl-6 pr-6 rounded-full h-8 border border-[#035E35] text-[15px] text-[#035E35] font-medium'>
                                     <Link to="/login"><button>Login</button></Link>
