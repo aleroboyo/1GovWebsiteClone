@@ -37,13 +37,13 @@ const ForgotPasswordPage = () => {
                     <div className="w-112.75">
                         <div>
                             <h1 className="text-[27.94px] text-[#212529] font-medium mt-10 mb-6">Reset Password</h1>
-                            <p className="text-[16px] text-[#212529] mb-18">Enter your email address and we’ll send you an email with instructions to reset your password.</p>
+                            <p className="text-[16px] text-[#212529] mb-14">Enter your email address and we’ll send you an email with instructions to reset your password.</p>
                         </div>
                        <div>
                             <ResetPasswordForm/>
                        </div>
                         <div>
-                            <p className="text-[16px] text-[#212529] mb-18">If you don’t receive an email from us within a few minutes, check your spam filter as sometimes they end up in there.</p>
+                            <p className="text-[16px] text-[#212529] mb-14">If you don’t receive an email from us within a few minutes, check your spam filter as sometimes they end up in there.</p>
                         </div>
                     </div>
 
