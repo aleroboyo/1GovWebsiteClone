@@ -19,13 +19,13 @@ const ForgotPasswordPage = () => {
                         <div className='hidden lg:flex' >
                             <ul className='flex space-x-4 text-[#495057] text-[14px] pr-4'>
                                 <li>
-                                    <button className='p-1 pl-2.5 pr-2.5 rounded-full text-white text-[13px] bg-[#FF3226] mt-2'>reportgov <span className='text-[9px] bg-[#2D8B10] rounded-md pt-[0.2rem] pb-[0.2rem] pr-[0.2rem] pl-[0.2rem]'>.ng</span></button>
+                                    <button className='p-1 px-2.5 rounded-full text-white text-[13px] bg-[#FF3226] mt-2'>reportgov <span className='text-[9px] bg-[#2D8B10] rounded-md p-[0.2rem]'>.ng</span></button>
                                 </li>
-                                <li className='pt-1 pb-1 pl-6 pr-6 rounded-full h-10 border border-[#035E35] text-[20px] text-[#035E35] font-medium'>
+                                <li className='py-1 px-6 rounded-full h-10 border border-[#035E35] text-[20px] text-[#035E35] font-medium'>
                                     <Link to="/login"><button>Login</button></Link>
                                 </li>
                                 <li>
-                                    <button className='pt-1 pb-1 pl-6 pr-6 rounded-full text-white bg-[#035E35] text-[20px]'>Sign up</button>
+                                    <button className='py-1 px-6 rounded-full text-white bg-[#035E35] text-[20px]'>Sign up</button>
                                 </li>
                             </ul>
                         </div>

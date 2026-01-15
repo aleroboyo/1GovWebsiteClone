@@ -10,42 +10,69 @@ const LoginPage = () => {
 
             <div className='lg:grid grid-cols-2'>
 
-                <div className="h-76 bg-cover bg-center relative lg:order-2 lg:h-screen"
+                <div className="lg:h-screen h-[40vh] bg-cover bg-center relative lg:order-2 "
                     style={{ backgroundImage: `url(${CityGateImg})` }}>
                     <p className="hidden lg:block absolute top-6 left-6 text-white text-[20px]">Resources ⌵ Help</p>
                 </div>
 
-                <div className='lg:order-1 text-center items-center'>
+                <div className='lg:order-1 flex flex-col justify-center text-center items-center w-full'>
                     <div className="">
-                        <img src={OneGovLogo} alt='1Gov Logo' className='h-12 lg:ml-56 mt-16 mb-30' />
+                        <img src={OneGovLogo} alt='1Gov Logo' className='h-10 lg:h-12 mx-18 my-4 lg:mb-18 lg:' />
                     </div>
 
-                    <div>
-                        <div>
-                            <p className='font-bold text-[#212529] text-[28px]'>Welcome Back!</p>
-                            <p className='text-[16px] text-[#667185] font-bold w-56 text-left lg:relative left-64 mb-6'>Enter your credentials to access the MDA</p>
-                            <form className='flex flex-col gap-2'>
-                                <label className='text-[14px] text-[#101928] font-bold w-52 lg:relative left-64 text-left'>MDA</label>
-                                <input type='text' placeholder='Enter your MDA' className='w-54 h-10 border border-[#bcbbbb] rounded-md pl-2 lg:relative left-64'/>
-                                <label className='text-[14px] text-[#101928] font-bold w-52 lg:relative left-64 text-left'>Email Address</label>
-                                <input type='text' placeholder='Enter Email' className='w-54 h-10 border border-[#bcbbbb] rounded-md pl-2 lg:relative left-64' />
-                                <label className='text-[14px] text-[#101928] font-bold w-52 lg:relative left-64 lg:text-left'>Password</label>
-                                <PasswordVisibilty placeholder='Enter password'/>
+                    <div className='w-full flex flex-col gap-6 justify-center items-center '>
+                        <div className='w-72 flex  flex-col justify-start'>
+                            <p className='font-bold text-[#212529] text-[28px] text-left'>Welcome Back!</p>
+                            <p
+                                className='text-[16px] text-[#667185] text-left font-bold mb-6'
+                            >
+                                Enter your credentials to access the MDA
+                            </p>
+                            <form className='flex flex-col gap-2 justify-start '>
+
+                                {/* <div> */}
+
+                                <label className='text-[14px] text-[#101928] font-bold text-left'>MDA</label>
+
+                                <input type='text' placeholder='Enter your MDA' className=' h-10 border border-[#bcbbbb] rounded-md p-2 ' />
+                                {/* </div> */}
+
+                                {/* <div> */}
+
+                                <label className='text-[14px] text-[#101928] font-bold text-left'>Email Address</label>
+                                <input type='text' placeholder='Enter Email' className='h-10 border border-[#bcbbbb] rounded-md p-2' />
+                                {/* </div> */}
+
+                                {/* <div> */}
+                                <label className='text-[14px] text-[#101928] font-bold text-left'>Password</label>
+                                <PasswordVisibilty placeholder='Enter password' />
+                                {/* </div> */}
+
+                                <Link to='/forgot-password'><p className='text-[16px] text-[#BC1824] '>Forgot Password?</p></Link>
+                                <button type='submit' className='h-10 bg-[#033E03] text-white rounded-md mb-12'>Login</button>
+
                             </form>
-                            <Link to='/forgot-password'><p className='text-[16px] text-[#BC1824] mb-4'>Forgot Password?</p></Link>
-                            <button className='w-54 h-10 bg-[#033E03] text-white ml-2 rounded-md mb-12'>Login</button>
+
                         </div>
                     </div>
 
                     <div>
-                        <ul className='text-[14px] text-[#0D6EFD] lg:w-54 lg:ml-68 text-center justify-center'>
-                            <div className='lg: flex'>
-                                <Link to=''><li className='underline lg:relative left-1 '>Privacy Policy<span className='text-[#212529bf] ml-4 lg: relative right-2 '>•</span></li></Link>
-                                <Link to=''><li className='underline lg: relative left-1'><div>Terms of </div><div className='lg: relative right-22'>Use</div><span className='text-[#212529bf] ml-4 lg:relative bottom-5 right-18'>•</span></li></Link>
+                        {/* <ul > */}
+                            <div className='text-[14px] text-[#0D6EFD] space-x-1 '>
+                                <Link to='' className='underline'>
+                                    Privacy Policy
+                                </Link>
+                                <span className='text-[#212529bf]'>•</span>
+                                <Link to=''className='underline'>
+                                    Terms of Use 
+                                </Link>
+                                <span className='text-[#212529bf]'>•</span>
+                                <Link to=''className='underline'>Security</Link>
+                                
                             </div>
+
                             
-                            <Link to=''><li className='underline lg:relative bottom-10.5 left-1'>Security</li></Link>
-                        </ul>
+                        {/* </ul> */}
                     </div>
                 </div>
 

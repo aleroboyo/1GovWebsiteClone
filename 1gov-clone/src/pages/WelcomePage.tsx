@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 import { products } from '../data/products'
 import OneGovLogo from '../assets/logos/1_gov_logo3.png'
-import SearchIcon from '../assets/icons/search_icon.png'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 import TodoListIcon from '../assets/icons/todo_list_icon.png'
 import GalaxyBackboneLogo from '../assets/logos/galaxy_logo.png'
 import IgIcon from '../assets/icons/ig_icon.png'
@@ -87,15 +87,18 @@ const WelcomePage = () => {
                         <div>
                             <p className='text-[#198754] text-[31.1px] font-bold text-center mt-20 '>Checkout the application product sheet</p>
                         </div>
-                        <div className='lg:grid gap-10 grid-cols-3 mt-20 pr-10 pl-17 w-350'>
+                        <div className='grid gap-10 grid-cols-3 mt-20 pr-10 pl-17 w-350'>
                             {products.map((product) => (
-                                <div key={product.title} className='border border-gray-200 rounded-2xl shadow-[0_0_0_5px_rgba(0,0,0,0.03)] pl-8 pr-20'>
-                                    <img src={product.icon} alt={product.title} className='ml-72 w-20' />
-                                    <div className='text-[24px] font-extrabold mb-2'>{product.title}</div>
-                                    <div className='mb-4'>{product.description}</div>
+                                <div key={product.title} className='border border-gray-200 rounded-2xl shadow-xl shadow-gray-300 p-6 h-72 space-y-3'>
+                                    <div className='flex justify-end'>
+                                        <img src={product.icon} alt={product.title} className='w-20' />
+                                    </div>
+                                    
+                                    <div className='text-[24px] font-extrabold '>{product.title}</div>
+                                    <div className=''>{product.description}</div>
                                     <div>
-                                        <Link to={product.link} className='text-[#2D8645] font-semibold'>
-                                            Learn more<img src={SearchIcon} alt="Search Icon" className='relative bottom-10 left-22'/>
+                                        <Link to={product.link} className='text-[#2D8645] font-semibold flex items-center gap-2'>
+                                            <span>Learn more</span><FaExternalLinkAlt />
                                         </Link>
                                     </div>
                                 </div>
